@@ -1,4 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+/* ---------- SCSS VARIABLES SECTION ---------- */
+/* ---------- UNIVERSAL STYLE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+
+button {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.title {
+  color: #00252e;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+/* ---------- HEADER SECTION ---------- */
+.hero {
+  width: 100%;
+}
+
+.mobile-bg {
+  position: absolute;
+  width: 100%;
+  background-color: #ebfbff;
+  z-index: -1;
+}
+
+.hero-top {
+  margin: 0 10px;
+  padding-top: 30px;
+}
+
+.hero .logo {
+  width: 25%;
+}
+
+.try {
+  background-color: white;
+  border: 0;
+  color: #00252e;
+}
+
+.hero-body {
+  padding: 100px 30px 20px;
+}
+
+.hero .info {
+  color: #00252e;
+  font-family: "Open Sans";
+  margin: 15px 0 30px;
+}
+
+.action {
+  background-color: #ff52bf;
+  color: white;
+  padding: 10px 50px;
+  border: 1px solid #ff52bf;
+  border-radius: 20px;
+}
+
+.mockups {
+  width: 100%;
+  padding: 70px 10px 0;
+}
+
+/* ---------- REASONS SECTION ---------- */
+.reason img {
+  width: 100%;
+}
+
+.reason .info {
+  color: #808d99;
+  font-family: "Open Sans";
+}
+
+/* ---------- CALL TO ACTION SECTION ---------- */
 /* ---------- FOOTER SECTION ---------- */
+footer {
+  background-color: #00252e;
+  color: white;
+  font-family: "Open Sans";
+}
+
+footer .logo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.contact {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.icons {
+  text-align: center;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.fa-facebook-f {
+  padding: 10px 12px;
+}
+
+.copyright {
+  text-align: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
