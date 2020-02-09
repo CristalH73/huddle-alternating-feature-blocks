@@ -45,21 +45,29 @@ button {
 }
 
 .hero-top {
+  display: flex;
+  justify-content: space-between;
   margin: 0 10px;
   padding-top: 30px;
 }
 
 .hero .logo {
-  width: 25%;
+  flex: 0 1 25%;
+  height: 20px;
 }
 
 .try {
   background-color: white;
-  border: 0;
   color: $darkCyan;
+  padding: 5px 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px lighten($grayBlue, 30%);
 }
 
 .hero-body {
+  display: flex;
+  flex-direction: column;
   padding: 100px 30px 20px;
 }
 
@@ -72,9 +80,10 @@ button {
 .action {
   background-color: $pink;
   color: white;
-  padding: 10px 50px;
+  padding: 13px 60px;
   border: 1px solid $pink;
-  border-radius: 20px;
+  border-radius: 30px;
+  align-self: center;
 }
 
 .mockups {
@@ -83,16 +92,55 @@ button {
 }
 
 /* ---------- REASONS SECTION ---------- */
+.reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 25px 0;
+  padding: 70px 30px;
+  box-shadow: 0 0 10px 5px lighten($grayBlue, 40%);
+  border-radius: 20px;
+}
 .reason img {
-  width: 100%;
+  width: 80%;
+  margin-bottom: 80px;
 }
 
 .reason .info {
   color: $grayBlue;
   font-family: "Open Sans";
+  margin: 20px;
 }
 
 /* ---------- CALL TO ACTION SECTION ---------- */
+
+.over-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-top: 120px;
+  padding: 50px 30px;
+  box-shadow: 0 0 10px 5px lighten($grayBlue, 40%);
+  border-radius: 20px;
+}
+
+.call-to-action .action {
+  margin-top: 30px;
+  padding: 15px 60px;
+}
 
 /* ---------- FOOTER SECTION ---------- */
 footer {
