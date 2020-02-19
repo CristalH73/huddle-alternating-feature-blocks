@@ -182,16 +182,51 @@ footer {
   background-color: #00252e;
   color: white;
   font-family: "Open Sans";
+  padding: 150px 20px 20px 20px;
 }
 
 footer .logo {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
+  width: 45%;
 }
 
-.contact {
-  display: inline-block;
-  padding-left: 20px;
+.contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 250px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.address,
+.tel,
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.icon {
+  margin-right: 15px;
+  height: 18px;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav li {
+  padding-bottom: 20px;
 }
 
 .icons {
@@ -202,6 +237,7 @@ footer .logo {
   border: 1px solid white;
   border-radius: 50%;
   padding: 10px;
+  margin: 8px;
 }
 
 .fa-facebook-f {
@@ -210,6 +246,9 @@ footer .logo {
 
 .copyright {
   text-align: center;
+  font-family: "Poppins";
+  font-size: 0.7em;
+  padding: 20px 0 10px;
 }
 
 .attribution {
@@ -218,6 +257,6 @@ footer .logo {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #ff52bf;
 }
 /*# sourceMappingURL=index.css.map */
