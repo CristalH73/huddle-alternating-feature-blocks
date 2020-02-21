@@ -84,6 +84,7 @@ button {
   border: 1px solid $pink;
   border-radius: 30px;
   align-self: center;
+  box-shadow: 0 2px 8px lighten($grayBlue, 30%);
 }
 
 .mockups {
@@ -125,6 +126,8 @@ button {
 .over-footer {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .call-to-action {
@@ -133,21 +136,25 @@ button {
   width: 95%;
   margin-top: 120px;
   padding: 50px 30px;
-  box-shadow: 0 0 10px 5px lighten($grayBlue, 40%);
+  box-shadow: 0 0px 10px 5px hsla(208, 11%, 55%, 0.1);
   border-radius: 20px;
+  background-color: white;
 }
 
 .call-to-action .action {
   margin-top: 30px;
   padding: 15px 60px;
+  box-shadow: 0 2px 8px lighten($grayBlue, 30%);
 }
 
 /* ---------- FOOTER SECTION ---------- */
 footer {
+  position: relative;
+  margin-top: -80px;
   background-color: $darkCyan;
   color: white;
   font-family: "Open Sans";
-  padding: 150px 20px 20px 20px;
+  padding: 170px 20px 20px 20px;
 }
 
 footer .logo {
