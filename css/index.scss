@@ -69,12 +69,16 @@ button {
   display: flex;
   flex-direction: column;
   padding: 100px 30px 20px;
-}
-
-.hero .info {
-  color: $darkCyan;
-  font-family: "Open Sans";
-  margin: 15px 0 30px;
+  .title {
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  .info {
+    color: $darkCyan;
+    font-family: "Open Sans";
+    margin: 15px 0 30px;
+    line-height: 1.6em;
+  }
 }
 
 .action {
@@ -106,19 +110,23 @@ button {
   align-items: center;
   width: 85%;
   margin: 25px 0;
-  padding: 70px 30px;
+  padding: 70px 30px 30px;
   box-shadow: 0 0 10px 5px lighten($grayBlue, 40%);
   border-radius: 20px;
-}
-.reason img {
-  width: 80%;
-  margin-bottom: 80px;
-}
-
-.reason .info {
-  color: $grayBlue;
-  font-family: "Open Sans";
-  margin: 20px;
+  img {
+    width: 80%;
+    margin-bottom: 80px;
+  }
+  .title {
+    font-size: 1.3em;
+  }
+  .info {
+    color: $grayBlue;
+    font-family: "Open Sans";
+    font-size: 0.95em;
+    line-height: 1.5em;
+    margin: 20px;
+  }
 }
 
 /* ---------- CALL TO ACTION SECTION ---------- */
@@ -155,11 +163,14 @@ footer {
   color: white;
   font-family: "Open Sans";
   padding: 170px 20px 20px 20px;
+  .logo {
+    filter: brightness(0) invert(1);
+    width: 45%;
+  }
 }
 
-footer .logo {
-  filter: brightness(0) invert(1);
-  width: 45%;
+.contact {
+  line-height: 1.7em;
 }
 
 .contact-details {
@@ -185,6 +196,7 @@ footer .logo {
   list-style: none;
   li {
     padding-bottom: 20px;
+    font-size: 1.2em;
   }
 }
 
