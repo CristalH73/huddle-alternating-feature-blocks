@@ -40,6 +40,7 @@ button {
 .mobile-bg {
   position: absolute;
   width: 100%;
+  height: 124vh;
   background-color: $paleCyan;
   z-index: -1;
 }
@@ -47,36 +48,39 @@ button {
 .hero-top {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin: 0 10px;
   padding-top: 30px;
 }
 
 .hero .logo {
-  flex: 0 1 25%;
-  height: 20px;
+  flex: 0 1 20%;
+  height: 17px;
 }
 
 .try {
   background-color: white;
   color: $darkCyan;
-  padding: 5px 25px;
+  padding: 4px 20px;
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: 0 2px 8px lighten($grayBlue, 30%);
+  font-size: 0.58em;
 }
 
 .hero-body {
   display: flex;
   flex-direction: column;
-  padding: 100px 30px 20px;
+  padding: 90px 20px 20px;
   .title {
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 1.5em;
   }
   .info {
     color: $darkCyan;
     font-family: "Open Sans";
     margin: 15px 0 30px;
+    font-size: 0.9em;
     line-height: 1.6em;
   }
 }
@@ -93,7 +97,7 @@ button {
 
 .mockups {
   width: 100%;
-  padding: 70px 10px 0;
+  padding: 60px 10px 0;
 }
 
 /* ---------- REASONS SECTION ---------- */
@@ -108,24 +112,24 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85%;
+  width: 87%;
   margin: 25px 0;
-  padding: 70px 30px 30px;
+  padding: 50px 20px 20px;
   box-shadow: 0 0 10px 5px lighten($grayBlue, 40%);
   border-radius: 20px;
   img {
-    width: 80%;
-    margin-bottom: 80px;
+    width: 90%;
+    margin-bottom: 60px;
   }
   .title {
-    font-size: 1.3em;
+    font-size: 1.15em;
   }
   .info {
     color: $grayBlue;
     font-family: "Open Sans";
-    font-size: 0.95em;
+    font-size: 0.8em;
     line-height: 1.5em;
-    margin: 20px;
+    margin: 15px;
   }
 }
 
@@ -143,16 +147,19 @@ button {
   flex-direction: column;
   width: 95%;
   margin-top: 120px;
-  padding: 50px 30px;
+  padding: 40px 20px;
   box-shadow: 0 0px 10px 5px hsla(208, 11%, 55%, 0.1);
   border-radius: 20px;
   background-color: white;
-}
-
-.call-to-action .action {
-  margin-top: 30px;
-  padding: 15px 60px;
-  box-shadow: 0 2px 8px lighten($grayBlue, 30%);
+  .title {
+    font-size: 1em;
+  }
+  .action {
+    margin-top: 25px;
+    font-size: 0.65em;
+    padding: 13px 55px;
+    box-shadow: 0 2px 8px lighten($grayBlue, 30%);
+  }
 }
 
 /* ---------- FOOTER SECTION ---------- */
@@ -162,15 +169,12 @@ footer {
   background-color: $darkCyan;
   color: white;
   font-family: "Open Sans";
-  padding: 170px 20px 20px 20px;
+  font-size: 1rem;
+  padding: 155px 20px 20px 20px;
   .logo {
     filter: brightness(0) invert(1);
-    width: 45%;
+    width: 50%;
   }
-}
-
-.contact {
-  line-height: 1.7em;
 }
 
 .contact-details {
@@ -178,6 +182,10 @@ footer {
   flex-direction: column;
   height: 250px;
   justify-content: space-evenly;
+}
+
+.contact {
+  line-height: 1.6em;
 }
 
 .address,
@@ -194,6 +202,7 @@ footer {
 
 .footer-nav {
   list-style: none;
+  padding: 30px 0 20px;
   li {
     padding-bottom: 20px;
     font-size: 1.2em;
@@ -202,17 +211,18 @@ footer {
 
 .icons {
   text-align: center;
+  font-size: 0.9em;
 }
 
 .fab {
   border: 1px solid white;
   border-radius: 50%;
-  padding: 10px;
+  padding: 8px;
   margin: 8px;
 }
 
 .fa-facebook-f {
-  padding: 10px 12px;
+  padding: 8px 10px;
 }
 
 .copyright {
@@ -229,3 +239,5 @@ footer {
 .attribution a {
   color: $pink;
 }
+
+/* ---------- MEDIA QUERIES ---------- */

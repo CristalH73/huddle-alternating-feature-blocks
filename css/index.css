@@ -36,6 +36,7 @@ button {
 .mobile-bg {
   position: absolute;
   width: 100%;
+  height: 124vh;
   background-color: #ebfbff;
   z-index: -1;
 }
@@ -47,25 +48,29 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin: 0 10px;
   padding-top: 30px;
 }
 
 .hero .logo {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
-  height: 20px;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  height: 17px;
 }
 
 .try {
   background-color: white;
   color: #00252e;
-  padding: 5px 25px;
+  padding: 4px 20px;
   border: 1px solid white;
   border-radius: 20px;
   -webkit-box-shadow: 0 2px 8px #d5d9dd;
           box-shadow: 0 2px 8px #d5d9dd;
+  font-size: 0.58em;
 }
 
 .hero-body {
@@ -76,11 +81,11 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 100px 30px 20px;
+  padding: 90px 20px 20px;
 }
 
 .hero-body .title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 1.5em;
 }
 
@@ -88,6 +93,7 @@ button {
   color: #00252e;
   font-family: "Open Sans";
   margin: 15px 0 30px;
+  font-size: 0.9em;
   line-height: 1.6em;
 }
 
@@ -106,7 +112,7 @@ button {
 
 .mockups {
   width: 100%;
-  padding: 70px 10px 0;
+  padding: 60px 10px 0;
 }
 
 /* ---------- REASONS SECTION ---------- */
@@ -135,29 +141,29 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 85%;
+  width: 87%;
   margin: 25px 0;
-  padding: 70px 30px 30px;
+  padding: 50px 20px 20px;
   -webkit-box-shadow: 0 0 10px 5px #f1f2f4;
           box-shadow: 0 0 10px 5px #f1f2f4;
   border-radius: 20px;
 }
 
 .reason img {
-  width: 80%;
-  margin-bottom: 80px;
+  width: 90%;
+  margin-bottom: 60px;
 }
 
 .reason .title {
-  font-size: 1.3em;
+  font-size: 1.15em;
 }
 
 .reason .info {
   color: #808d99;
   font-family: "Open Sans";
-  font-size: 0.95em;
+  font-size: 0.8em;
   line-height: 1.5em;
-  margin: 20px;
+  margin: 15px;
 }
 
 /* ---------- CALL TO ACTION SECTION ---------- */
@@ -182,16 +188,21 @@ button {
           flex-direction: column;
   width: 95%;
   margin-top: 120px;
-  padding: 50px 30px;
+  padding: 40px 20px;
   -webkit-box-shadow: 0 0px 10px 5px rgba(128, 141, 153, 0.1);
           box-shadow: 0 0px 10px 5px rgba(128, 141, 153, 0.1);
   border-radius: 20px;
   background-color: white;
 }
 
+.call-to-action .title {
+  font-size: 1em;
+}
+
 .call-to-action .action {
-  margin-top: 30px;
-  padding: 15px 60px;
+  margin-top: 25px;
+  font-size: 0.65em;
+  padding: 13px 55px;
   -webkit-box-shadow: 0 2px 8px #d5d9dd;
           box-shadow: 0 2px 8px #d5d9dd;
 }
@@ -203,17 +214,14 @@ footer {
   background-color: #00252e;
   color: white;
   font-family: "Open Sans";
-  padding: 170px 20px 20px 20px;
+  font-size: 1rem;
+  padding: 155px 20px 20px 20px;
 }
 
 footer .logo {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
-  width: 45%;
-}
-
-.contact {
-  line-height: 1.7em;
+  width: 50%;
 }
 
 .contact-details {
@@ -228,6 +236,10 @@ footer .logo {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.contact {
+  line-height: 1.6em;
 }
 
 .address,
@@ -248,6 +260,7 @@ footer .logo {
 
 .footer-nav {
   list-style: none;
+  padding: 30px 0 20px;
 }
 
 .footer-nav li {
@@ -257,17 +270,18 @@ footer .logo {
 
 .icons {
   text-align: center;
+  font-size: 0.9em;
 }
 
 .fab {
   border: 1px solid white;
   border-radius: 50%;
-  padding: 10px;
+  padding: 8px;
   margin: 8px;
 }
 
 .fa-facebook-f {
-  padding: 10px 12px;
+  padding: 8px 10px;
 }
 
 .copyright {
@@ -285,4 +299,6 @@ footer .logo {
 .attribution a {
   color: #ff52bf;
 }
+
+/* ---------- MEDIA QUERIES ---------- */
 /*# sourceMappingURL=index.css.map */
