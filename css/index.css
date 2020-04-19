@@ -9,10 +9,6 @@
           box-sizing: border-box;
 }
 
-body {
-  font-size: 18px;
-}
-
 button {
   font-family: "Open Sans";
   font-weight: 700;
@@ -36,7 +32,6 @@ button {
 .mobile-bg {
   position: absolute;
   width: 100%;
-  height: 124vh;
   background-color: #ebfbff;
   z-index: -1;
 }
@@ -51,26 +46,24 @@ button {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin: 0 10px;
-  padding-top: 30px;
+  margin: 0 1em;
+  padding-top: 2em;
 }
 
 .hero .logo {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 20%;
-          flex: 0 1 20%;
-  height: 17px;
+  width: 25%;
+  max-width: 250px;
 }
 
 .try {
   background-color: white;
   color: #00252e;
-  padding: 4px 20px;
+  padding: 0.3em 2.1em;
   border: 1px solid white;
   border-radius: 20px;
   -webkit-box-shadow: 0 2px 8px #d5d9dd;
           box-shadow: 0 2px 8px #d5d9dd;
-  font-size: 0.58em;
+  font-size: 0.6rem;
 }
 
 .hero-body {
@@ -81,26 +74,26 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 90px 20px 20px;
+  padding: 5.5em 2em 2em;
 }
 
 .hero-body .title {
-  font-size: 1.5em;
+  font-size: 1.7rem;
   line-height: 1.5em;
 }
 
 .hero-body .info {
   color: #00252e;
   font-family: "Open Sans";
-  margin: 15px 0 30px;
-  font-size: 0.9em;
+  margin: 1em 0 2em;
+  font-size: 1rem;
   line-height: 1.6em;
 }
 
 .action {
   background-color: #ff52bf;
   color: white;
-  padding: 13px 60px;
+  padding: 0.9em 4.5em;
   border: 1px solid #ff52bf;
   border-radius: 30px;
   -ms-flex-item-align: center;
@@ -112,7 +105,8 @@ button {
 
 .mockups {
   width: 100%;
-  padding: 60px 10px 0;
+  max-width: 800px;
+  padding: 4em 0.7em 0;
 }
 
 /* ---------- REASONS SECTION ---------- */
@@ -127,7 +121,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 50px;
+  padding-top: 3.5em;
 }
 
 .reason {
@@ -142,8 +136,8 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 87%;
-  margin: 25px 0;
-  padding: 50px 20px 20px;
+  margin: 1.5em 0;
+  padding: 3.2em 1.25em 1.25em;
   -webkit-box-shadow: 0 0 10px 5px #f1f2f4;
           box-shadow: 0 0 10px 5px #f1f2f4;
   border-radius: 20px;
@@ -151,19 +145,20 @@ button {
 
 .reason img {
   width: 90%;
-  margin-bottom: 60px;
+  max-width: 500px;
+  margin-bottom: 3.8em;
 }
 
 .reason .title {
-  font-size: 1.15em;
+  font-size: 1.2rem;
 }
 
 .reason .info {
   color: #808d99;
   font-family: "Open Sans";
-  font-size: 0.8em;
+  font-size: 0.9rem;
   line-height: 1.5em;
-  margin: 15px;
+  margin: 1em;
 }
 
 /* ---------- CALL TO ACTION SECTION ---------- */
@@ -187,8 +182,9 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 95%;
+  max-width: 800px;
   margin-top: 120px;
-  padding: 40px 20px;
+  padding: 2.5em 1.5em;
   -webkit-box-shadow: 0 0px 10px 5px rgba(128, 141, 153, 0.1);
           box-shadow: 0 0px 10px 5px rgba(128, 141, 153, 0.1);
   border-radius: 20px;
@@ -196,13 +192,13 @@ button {
 }
 
 .call-to-action .title {
-  font-size: 1em;
+  font-size: 1.2rem;
 }
 
 .call-to-action .action {
-  margin-top: 25px;
-  font-size: 0.65em;
-  padding: 13px 55px;
+  margin-top: 1.75em;
+  font-size: 0.8rem;
+  padding: 1em 4.25em;
   -webkit-box-shadow: 0 2px 8px #d5d9dd;
           box-shadow: 0 2px 8px #d5d9dd;
 }
@@ -210,18 +206,19 @@ button {
 /* ---------- FOOTER SECTION ---------- */
 footer {
   position: relative;
-  margin-top: -80px;
+  margin-top: -5em;
   background-color: #00252e;
   color: white;
   font-family: "Open Sans";
   font-size: 1rem;
-  padding: 155px 20px 20px 20px;
+  padding: 155px 1.25em 1.25em 1.25em;
 }
 
 footer .logo {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   width: 50%;
+  max-width: 300px;
 }
 
 .contact-details {
@@ -254,45 +251,45 @@ footer .logo {
 }
 
 .icon {
-  margin-right: 15px;
+  margin-right: 1em;
   height: 18px;
 }
 
 .footer-nav {
   list-style: none;
-  padding: 30px 0 20px;
+  padding: 2em 0 1.25em;
 }
 
 .footer-nav li {
-  padding-bottom: 20px;
-  font-size: 1.2em;
+  padding-bottom: 1em;
+  font-size: 1.2rem;
 }
 
 .icons {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .fab {
   border: 1px solid white;
   border-radius: 50%;
-  padding: 8px;
-  margin: 8px;
+  padding: 0.6em;
+  margin: 0.5em;
 }
 
 .fa-facebook-f {
-  padding: 8px 10px;
+  padding: 0.6em 0.8em;
 }
 
 .copyright {
   text-align: center;
   font-family: "Poppins";
-  font-size: 0.7em;
-  padding: 20px 0 10px;
+  font-size: 0.7rem;
+  padding: 1.25em 0 0.8em;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
 }
 
@@ -301,4 +298,12 @@ footer .logo {
 }
 
 /* ---------- MEDIA QUERIES ---------- */
+@media screen and (min-width: 440px) {
+  .mockups {
+    width: 90%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
 /*# sourceMappingURL=index.css.map */
