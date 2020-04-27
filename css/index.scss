@@ -31,13 +31,8 @@ button {
 /* ---------- HEADER SECTION ---------- */
 .hero {
   width: 100%;
-}
-
-.mobile-bg {
-  position: absolute;
-  width: 100%;
+  background-image: url("../images/bg-hero-mobile.svg");
   background-color: $paleCyan;
-  z-index: -1;
 }
 
 .hero-top {
@@ -80,13 +75,22 @@ button {
   }
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 475px;
+  align-self: center;
+}
+
 .action {
   background-color: $pink;
   color: white;
-  padding: 0.9em 4.5em;
+  padding: 0.9em 0;
   border: 1px solid $pink;
-  border-radius: 30px;
+  width: 50%;
+  max-width: 250px;
   align-self: center;
+  border-radius: 30px;
   box-shadow: 0 2px 8px lighten($grayBlue, 30%);
 }
 
@@ -109,13 +113,14 @@ button {
   flex-direction: column;
   align-items: center;
   width: 87%;
+  min-height: 550px;
   margin: 1.5em 0;
   padding: 3.2em 1.25em 1.25em;
   box-shadow: 0 0 10px 5px lighten($grayBlue, 40%);
   border-radius: 20px;
   img {
     width: 90%;
-    max-width: 500px;
+    max-width: 400px;
     margin-bottom: 3.8em;
   }
   .title {
@@ -155,7 +160,7 @@ button {
   .action {
     margin-top: 1.75em;
     font-size: 0.8rem;
-    padding: 1em 4.25em;
+    padding: 1em 0;
     box-shadow: 0 2px 8px lighten($grayBlue, 30%);
   }
 }
@@ -240,9 +245,85 @@ footer {
 }
 
 /* ---------- MEDIA QUERIES ---------- */
-@media screen and (min-width: 440px) {
+@media (min-width: 375px) {
+  .hero {
+    background-image: url("../images/bg-hero-desktop.svg");
+  }
+}
+
+@media (min-width: 450px) {
   .mockups {
     width: 90%;
     align-self: center;
+  }
+}
+
+@media (min-width: 750px) {
+  .hero-body {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .hero-text {
+    width: 45%;
+  }
+
+  .mockups {
+    width: 50%;
+  }
+
+  .reason {
+    justify-content: space-around;
+    min-height: 100%;
+  }
+
+  .reason:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .reason:nth-child(even) {
+    flex-direction: row;
+  }
+  .reason-text {
+    width: 50%;
+    max-width: 500px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-details {
+    width: 30%;
+  }
+
+  .footer-nav--container {
+    width: 35%;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 200px;
+  }
+
+  .icons {
+    width: 20%;
+  }
+
+  .footer-copyright {
+    align-self: flex-end;
+  }
+
+  .icons,
+  .copyright,
+  .attribution {
+    text-align: left;
   }
 }
