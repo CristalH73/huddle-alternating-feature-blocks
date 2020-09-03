@@ -55,7 +55,7 @@ button {
   color: #00252e;
   padding: 0.3em 2.1em;
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 40px;
   -webkit-box-shadow: 0 2px 8px #d5d9dd;
           box-shadow: 0 2px 8px #d5d9dd;
   font-size: 0.6rem;
@@ -325,6 +325,17 @@ footer .logo {
 }
 
 @media (min-width: 750px) {
+  :root {
+    font-size: 20px;
+  }
+  .try {
+    font-size: 0.8rem;
+    padding: 0.5em 2em;
+  }
+  .title,
+  .info {
+    text-align: left;
+  }
   .hero-body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -337,7 +348,7 @@ footer .logo {
     width: 45%;
   }
   .mockups {
-    width: 50%;
+    width: 45%;
   }
   .reason {
     -ms-flex-pack: distribute;
@@ -359,6 +370,15 @@ footer .logo {
   .reason-text {
     width: 50%;
     max-width: 500px;
+  }
+  .reason-text .info {
+    margin-left: 0;
+  }
+  .call-to-action .title {
+    text-align: center;
+  }
+  footer {
+    font-size: 0.9rem;
   }
   .footer-container {
     display: -webkit-box;
@@ -394,6 +414,9 @@ footer .logo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-height: 200px;
+  }
+  .footer-nav li {
+    font-size: 0.95rem;
   }
   .icons {
     width: 20%;
